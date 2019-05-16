@@ -1,0 +1,35 @@
+{% block content %}
+
+<section class="content-section">
+    <form name="predictForm" method="POST" action="/predict" onsubmit="return validateForm()">
+    	<br>
+    	<h1>Input Data</h1>
+    	<br>
+    	<b>Result:</b>
+    	<br>{% if label %} {{ label }} {% endif %}<br>	
+    	<h3>HB</h3> <input type="text" name="HB">
+    	<br>	
+    	<h3>RBCS</h3> <input type="text" name="RBCS">	
+    	<br>
+    	<h3>HCT</h3> <input type="text" name="HCT">	
+    	<br>
+    	<h3>MCV</h3> <input type="text" name="MCV">	
+    	<br>
+    	<h3>MCH</h3> <input type="text" name="MCH">	
+    	<br>
+    	<h3>MCHC</h3> <input type="text" name="MCHC">	
+    	<br>
+    	<h3>RDW-CV</h3> <input type="text" name="RDW-CV">	
+    	<br>
+    	<h3>RDW-SD</h3> <input type="text" name="RDW-SD">	
+    	<br>
+    	<h3>TC</h3> <input type="text" name="TC">	
+    	<br>
+    	<h3>PLT</h3> <input type="text" name="PLT">	 
+    	<br>
+    	<button type="submit"> Predict B12 </button>
+
+    </form>
+    	
+</section>
+{% endblock %}
