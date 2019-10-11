@@ -1,2 +1,2 @@
 Hosted app link
-https://sales-prediction1.herokuapp.com/
+https://b12-prediction.herokuapp.com/
